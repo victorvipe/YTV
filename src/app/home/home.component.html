@@ -1,0 +1,13 @@
+<!-- <div class="mx-auto" style="width: 50%;"> -->
+  <yvs-header></yvs-header>
+  <div class="home-container"> 
+    <h1 style="text-align: center">Search your video</h1>
+    <div  class="input-group mb-3">
+      <!-- <form class="form-horizontal" role="form" [formGroup]="homeForm"> -->
+        <div class="input-group-prepend">
+          <span (click)="onClick(searchInput.value)"class="input-group-text" id="inputGroup-sizing-default">Search</span>
+        </div>
+        <input #searchInput type="text" (keyup.enter)="onClick(searchInput.value)" placeholder="Search for your video" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <!-- </form> -->
+    </div>  
+  </div>  
