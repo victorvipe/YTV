@@ -1,3 +1,17 @@
-<p>
-  video-list works!
-</p>
+ <yvs-navbar></yvs-navbar>
+ <div class="item-container" *ngFor="let item of items" >
+    <!-- <li class="item" *ngFor="let item of items">
+      <div class="title-container">
+        <h4>{{item.snippet.title}}</h4>
+      </div>
+      <div class="img-container">
+        <img src='{{item.snippet.thumbnails.default.url}}'>
+      </div>
+    </li> -->
+    <figure   class="figure">
+        <figcaption class="figure-caption">{{item.snippet.title}}</figcaption>
+        <img (click)="onSelectItem(item)" src="{{item.snippet.thumbnails.default.url}}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">        
+    </figure>
+  </div>
+
+  

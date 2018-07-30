@@ -13,7 +13,7 @@ export class YoutubeService {
   constructor(private _http: HttpClient) { }
 
   search(values: string) {
-    let uri = `${this.url}?part=snippet&maxResults=20&q=${values}&key=${this.key}`;
+    let uri = `${this.url}?part=snippet&type=video&maxResults=20&q=${values}&key=${this.key}`;
     return this._http.get<any>(uri);
   }
 }

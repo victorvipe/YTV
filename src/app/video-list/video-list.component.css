@@ -1,0 +1,16 @@
+.item-container {
+    width: 100%;
+    height: 100%;
+    display: inline;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+.figure-caption {
+    width: 200px;
+}
+
+.figure {
+    padding-top: 5%;
+
+}

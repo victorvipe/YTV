@@ -1,0 +1,8 @@
+
+<div *ngIf="item; then editItem else listItems"></div>
+<ng-template #listItems>
+    <yvs-video-list [items]="items" (notifyItem)="onSelectItem($event)"></yvs-video-list> 
+</ng-template>
+<ng-template #editItem>
+    <yvs-video-item [item]="item"></yvs-video-item>
+</ng-template>
